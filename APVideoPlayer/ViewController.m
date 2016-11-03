@@ -19,20 +19,17 @@
     // Do any additional setup after loading the view, typically from a nib.
     
     
-//    fileURL = [[NSBundle mainBundle]URLForResource:@"meraVideo" withExtension:@"mp4"];
-//    
-//    NSLog(@"%@",fileURL);
-//    
-//    player= [[AVPlayer alloc]initWithURL:fileURL];
-//    
-//    moviePlayerLayer = [AVPlayerLayer playerLayerWithPlayer:player];
-//    
-//    [moviePlayerLayer setFrame:CGRectMake(100, 100, 300, 160)];
-//    
-//    [self.view.layer addSublayer:moviePlayerLayer];
-//    
-//    
-//
+    fileURL = [[NSBundle mainBundle]URLForResource:@"India" withExtension:@"mp4"];
+    
+    NSLog(@"%@",fileURL);
+    
+    player= [[AVPlayer alloc]initWithURL:fileURL];
+    
+    moviePlayerLayer = [AVPlayerLayer playerLayerWithPlayer:player];
+    
+ 
+    
+    
 
 }
 
@@ -42,47 +39,31 @@
     
 }
 
+
+
 - (IBAction)playPauseButton:(id)sender {
     
-    PlayButton = sender;
+   UIButton *PlayButton = sender;
     
-    
+        
+           if (PlayButton.tag == 100) {
+        [player play];        
+               
+        [moviePlayerLayer setFrame:CGRectMake(0, 250, 420, 200)];
+               
+        [self.view.layer addSublayer:moviePlayerLayer];
 
-    if (PlayButton.tag == 0) {
-        
-        fileURL = [[NSBundle mainBundle]URLForResource:@"Hyundai" withExtension:@"mp4"];
-        
-      //  NSLog(@"%@",fileURL);
-        
-        player = [[AVPlayer alloc]initWithURL:fileURL];
-        
-        
-        moviePlayerLayer = [AVPlayerLayer playerLayerWithPlayer:player];
-        
-        //[playerLayer setFrame:CGRectMake(0, 250, 420, 200)];
-        
-        [moviePlayerLayer setFrame:_myView.bounds];
-        
-        
-        
-        [self.myView.layer addSublayer:moviePlayerLayer];
-        self.myView.clipsToBounds = YES;
-
-        
-
-        [player play];
-        
-        
-        PlayButton.tag =1;
+        PlayButton.tag =101;
+               
     }
     
-    else{
-        
+    else if (PlayButton.tag == 101) {
+        //pause
         [player pause];
 
-        PlayButton.tag = 0;
+        PlayButton.tag = 100;
         
-        
+
     }
 
     
@@ -91,8 +72,16 @@
 
 - (IBAction)stopButton:(id)sender {
     
-   // player = [[AVPlayer alloc]initWithURL:fileURL];
+    [player pause];
 
+    
+    player= [[AVPlayer alloc]initWithURL:fileURL];
+    
+    moviePlayerLayer = [AVPlayerLayer playerLayerWithPlayer:player];
+    
+    
+    
+    
 }
 
 

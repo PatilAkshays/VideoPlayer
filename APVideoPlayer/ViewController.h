@@ -11,11 +11,9 @@
 
 @interface ViewController : UIViewController
 {
-    AVPlayer *player;
+      AVPlayer *player;
     AVPlayerLayer *moviePlayerLayer;
-    UIButton *PlayButton ;
-   // UIImage *playerImage;
-
+    
     NSURL *fileURL;
 }
 
@@ -24,8 +22,7 @@
 - (IBAction)stopButton:(id)sender;
 
 
-@property (strong, nonatomic) IBOutlet UIView *myView
-;
+
 
 @end
 

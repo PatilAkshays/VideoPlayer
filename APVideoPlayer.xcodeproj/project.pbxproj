@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		044EE05F1DCB68D500EB5683 /* India.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 044EE05E1DCB68D500EB5683 /* India.mp4 */; };
 		04E062181DAB94A000A3CC4F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 04E062171DAB94A000A3CC4F /* main.m */; };
 		04E0621B1DAB94A000A3CC4F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 04E0621A1DAB94A000A3CC4F /* AppDelegate.m */; };
 		04E0621E1DAB94A000A3CC4F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04E0621D1DAB94A000A3CC4F /* ViewController.m */; };
@@ -14,10 +15,10 @@
 		04E062231DAB94A000A3CC4F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04E062221DAB94A000A3CC4F /* Assets.xcassets */; };
 		04E062261DAB94A000A3CC4F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04E062241DAB94A000A3CC4F /* LaunchScreen.storyboard */; };
 		04E0622E1DAB973100A3CC4F /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04E0622D1DAB973100A3CC4F /* AVFoundation.framework */; };
-		04E062301DAB97D500A3CC4F /* Hyundai.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 04E0622F1DAB97D500A3CC4F /* Hyundai.mp4 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		044EE05E1DCB68D500EB5683 /* India.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = India.mp4; sourceTree = "<group>"; };
 		04E062131DAB94A000A3CC4F /* APVideoPlayer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = APVideoPlayer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		04E062171DAB94A000A3CC4F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		04E062191DAB94A000A3CC4F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -29,7 +30,6 @@
 		04E062251DAB94A000A3CC4F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		04E062271DAB94A000A3CC4F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		04E0622D1DAB973100A3CC4F /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
-		04E0622F1DAB97D500A3CC4F /* Hyundai.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = Hyundai.mp4; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,7 +64,7 @@
 		04E062151DAB94A000A3CC4F /* APVideoPlayer */ = {
 			isa = PBXGroup;
 			children = (
-				04E0622F1DAB97D500A3CC4F /* Hyundai.mp4 */,
+				044EE05E1DCB68D500EB5683 /* India.mp4 */,
 				04E062191DAB94A000A3CC4F /* AppDelegate.h */,
 				04E0621A1DAB94A000A3CC4F /* AppDelegate.m */,
 				04E0621C1DAB94A000A3CC4F /* ViewController.h */,
@@ -144,9 +144,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				04E062261DAB94A000A3CC4F /* LaunchScreen.storyboard in Resources */,
+				044EE05F1DCB68D500EB5683 /* India.mp4 in Resources */,
 				04E062231DAB94A000A3CC4F /* Assets.xcassets in Resources */,
 				04E062211DAB94A000A3CC4F /* Main.storyboard in Resources */,
-				04E062301DAB97D500A3CC4F /* Hyundai.mp4 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -310,6 +310,7 @@
 				04E0622C1DAB94A000A3CC4F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
